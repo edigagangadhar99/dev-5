@@ -1,0 +1,9 @@
+#!/bin/bash
+yum install httpd git -y
+service httpd status
+service httpd start
+service httpd status
+chkconfig httpd on
+cd /var/www/html/
+git clone https://github.com/ (website name or url ).
+service httpd restart
